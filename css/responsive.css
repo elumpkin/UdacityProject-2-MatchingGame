@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 650px) {
+
+    p {
+        font-size: 1em;
+    }
+
+    header {
+        font-size: 1.5em;
+    }
+
+   .container {
+       width: 100%;
+   }
+
+   .game {
+       width: 90%;
+   }
+}
+
+@media screen and (min-width: 651px){
+   .container {
+       width: 70%;
+   }
+
+   .game {
+        width: 80%;
+        max-width: 637px;
+   }
+}

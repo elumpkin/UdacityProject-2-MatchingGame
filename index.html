@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content='text/html; charset=UTF=8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <title>Ebonie's Memory Game Project</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    </head>
+    <body>
+        <header>
+<p>
+    Matching Game!
+</p>
+        </header>
+        <div class="heading container">
+            <div class="row title">
+                <div class="col-12">
+                    
+                </div>
+            </div>
+            <div class="row score">
+                <div class="col-4 stars">
+                    <img class="starRating" src="img/star.png" alt="star rating picture">
+                    <img class="starRating" src="img/star.png" alt="star rating picture">
+                    <img class="starRating" src="img/star.png" alt="star rating picture">
+                </div>
+                <div class="col-8 moves">
+                    <p class="movesScore"> Moves 0</p>
+                </div>
+                    <div class="col-8 moves">
+                    <p class="clock">
+                        Timer 0s
+                    </p>
+                </div>
+                <div class="col-4 reset resetButton">
+                    <img  src="img/reset.png" alt="reset button image" />
+                </div>
+            </div>
+        </div>
+        <div class="container game">
+
+            <div class="gameCard">
+            </div>
+            <div class="win hide">
+                <h1>
+                    Congrats!
+                </h1>
+                <div class="row winHeading">
+                    <p class="movesTime" id="movesTime"> </p>
+                    <p>
+                        Play again?
+                    </p>
+                    <div class="row winButtons">
+                        <button class="yes">
+                            Yes
+                        </button>
+                        <button class="no">
+                            No
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="thanks hide" >
+                <p>
+                    Thanks for playing!
+                </p>
+            </div>
+        </div>
+        
+        
+    <script src="app.js"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+    </body>
+</html>
