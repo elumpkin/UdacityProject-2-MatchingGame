@@ -201,20 +201,20 @@ matchBacks = (count, backClasses, backId) => {
     clickCount = count;
 
     timerStart = new Date().getTime();
-    const score = `<p class="movesScore"> Moves ${moves} </p>`
-    const star = `<img class="starLost" src="img/starOutline.svg"  alt="star outline"/>`
+    if (moves%2 === 0){
+        const score = `<p class="movesScore"> Moves ${moves/2} </p>`;
+        document.querySelector(".movesScore").remove();
+        document.querySelector('.moves').insertAdjacentHTML('afterbegin', score);
+
+    }
+    const star = `<img class="starLost" src="img/starOutline.svg"  alt="star outline"/>`;
 
     document.getElementById(backId).removeEventListener('click', backEvents[count -1]);
-    document.querySelector(".movesScore").remove();
-    document.querySelector('.moves').insertAdjacentHTML('afterbegin', score);
-
+    
     if (moves === 1) {
         timer = performance.now();
         timerClock();
     }else if (moves === 22) {
-        document.querySelector('.starRating').remove();
-        document.querySelector('.stars').insertAdjacentHTML('afterbegin', star);
-    } else if (moves === 25 ){
         document.querySelector('.starRating').remove();
         document.querySelector('.stars').insertAdjacentHTML('afterbegin', star);
     } else if (moves === 28) {
